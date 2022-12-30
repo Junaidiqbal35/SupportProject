@@ -1,24 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
 
         <div class="container">
-            <div class="card bg-dark text-blue">
-                <img src="../card3.jpg" class="card-img img-fluid h-50 w-100" alt="...">
-                <div class="card-img-overlay" style="margin-top:35% ;" >
-                  <h2 class="card-title bg-light">Mission</h2>
-                  <p class="card-text bg-light"></p>
+                    <div class="row" >
+                        <div class="thumbnail text-center">
+                            <img src="{% static 'images/old14.jpg' %}" class="img-fluid " alt="...">
+                            <div class="caption">
+                                <h1 class="align-middle ms-3 me-3">
+                                   Services
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div><hr>
-          </div>
 
 
 
-        <div class="container bg-light">
+        <div class="container bg-light mt-3">
             <div class="row justify-content-center">
                 <h1 class="text-center display-5" style="color: #426f8f;">Our Care Services</h1>
                 <div class="col-8">
                 <p class="lead text-center" >
-                    Abi-Support LTD recognize that a service user should stay in control,
+                    Steck Care Limited recognize that a service user should stay in control,
                     we provide a range of personal care, domestic and social support tailored
                     to meet the service user requirements.
                 </p><br>
@@ -27,27 +32,27 @@
         </div>
 
 
-
-                    <div class="container mt-5">
+                        <div class="container mt-5">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
 
 
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
                         <div class="col-md-2">
+                            <i class="fa fa-shower fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
                             <h5 class="display-6"
                             style="font-size:medium;
                             font-style:inherit;
                             color: rgb(3, 107, 107);
                             font-weight: 400;">
                             Personal Care and Assistance</h5>
-                            <p style="color: grey;"><small>Bathing, restroom activities, incontinence care, grooming, personal hygiene, dressing, walking, etc.</small></p>
+                            <p style="color: grey;"><small>Bathing, restroom activities, incontinence care, grooming, personal hygiene,
+                                dressing, walking, etc.</small></p>
                         </div>
 
 
                         <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
+                            <i class="fa fa-cutlery fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-2">
                             <h5 class="display-6"
@@ -61,7 +66,7 @@
 
 
                         <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
+                            <i class="fa fa-user-md fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-2">
                             <h5 class="display-6"
@@ -76,7 +81,7 @@
 
 
                         <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
+                            <i class="fa fa fa-car fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-2">
                             <h5 class="display-6"
@@ -91,7 +96,7 @@
 
 
                         <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
+                            <i class="fa fa-sign-language fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-2">
                             <h5 class="display-6"
@@ -100,12 +105,13 @@
                             color: rgb(3, 107, 107);
                             font-weight: 400;">
                             Domiciliary Care for Elderly Care</h5>
-                            <p style="color: grey;"><small>We are here to help with everyday tasks you might struggle with (complete individual care plans, etc.)</small></p>
+                            <p style="color: grey;"><small>We are here to help with everyday tasks you might
+                                struggle with (complete individual care plans, etc.)</small></p>
                         </div>
 
 
                         <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
+                            <i class="fa fa-balance-scale fa-4x rounded-circle h-50 w-50 ms-5 mt-3" style="color: #264b5d" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-2">
                             <h5 class="display-6"
@@ -115,12 +121,91 @@
                             font-weight: 400;">
 
                             Support in the Community</h5>
-                            <p style="color: grey;"><small>Support to help you stay connected to people you love (We can set you up with Skype, and make sharing pictures easy)</small></p>
+                            <p style="color: grey;"><small>Support to help you stay connected to people you love
+                                (We can set you up with Skype, and make sharing pictures easy)</small></p>
                         </div>
 
-                        </div><hr>
+
+
+                    </div><hr>
                     </div>
 
+
+
+                <div class="container mt-3">
+                    <div class="jumbotron text-center">
+                        <h1 class="display-4">Quality Care</h1>
+                        <p class="lead">Our caregivers are professionals with years experience and receive ongoing training.</p>
+                        <hr class="my-4">
+                      </div>
+
+                </div>
+
+
+                     <div class="container mt-3">
+                        <div class='text-center'>
+                            <h1 class='text-dark text-center mt-1 mb-1 pt-4 pb-4 fw-lighter'>Why Choose Us</h1>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                    <img src="{% static 'images/old11.jpg' %}" class=" img-fluid rounded float-start" style="filter: brightness(60%);"  alt="...">
+                                    <div class="caption">
+                                       <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">Home Care as Easy as 1-2-3</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                    <img src="{% static 'images/old10.jpg' %}" class="img-fluid rounded float-start " style="filter: brightness(60%);" alt="...">
+                                    <div class="caption" >
+                                        <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">24/7 Availability</h1>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                    <img src="{% static 'images/old13.jpg' %}" class="img-fluid rounded float-start " style="filter: brightness(60%);" alt="...">
+                                    <div class="caption" >
+                                    <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">Free In-Home Assessment</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                    <img src="{% static 'images/pic5.jpg' %}" class=" img-fluid rounded float-start " style="filter: brightness(60%);" alt="...">
+                                    <div class="caption" >
+                                   <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">Employee Model Agency</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                    <img src="{% static 'images/old14.jpg' %}" class="img-fluid rounded float-start " style="filter: brightness(60%);" alt="...">
+                                    <div class="caption" >
+                                    <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">Comfort Match Guarantee</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="thumbnail text-center " style="height: 13em;
+                                     position: relative; " >
+                                     <img src="{% static 'images/pic1.jpg' %}" class="img-fluid rounded float-start " style="filter: brightness(60%);" alt="...">
+                                    <div class="caption" >
+                                   <h1 class="display-4 ms-4 me-4" style="color: white; font-weight: lighter; font-size: xx-large">Bonded and Qualified Caregivers</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 {% endblock content %}

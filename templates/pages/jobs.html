@@ -1,5 +1,102 @@
 {% extends 'base.html' %}
+{% load crispy_forms_filters %}
+{% load static %}
 {% block content %}
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
+
+               <div class="container">
+                    <div class="row" >
+                        <div class="thumbnail text-center">
+                            <img src="{% static 'images/doctors.jpg' %}" class="img-fluid " alt="...">
+                            <div class="caption">
+                                <h1 class="align-middle ms-3 me-3">
+                                    Recruitment
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-2">
+                    <div class="clearfix mt-4">
+                        <img src="{% static 'images/pic5.jpg' %}" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="...">
+                        <h1 class="text-center" style="color: #426f8f; font-weight: 600;
+                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                            Join Our Team</h1>
+                           <figure class="text-center">
+
+                              <p><em>At Steck Care Limited we offer an excellent in-house/induction
+                                  programme and continuous professional development.
+                                  As a member of the team you can expect</em></p>
+
+                          </figure>
+                      </div>
+
+                    <div class="row">
+                       <div class="col-md-12">
+                           <h3>Evolve and Adapt</h3>
+                            <p><em>Steck Care Limited aims to be one of the top private health and social care service
+                                providers in Oxfordshire. Having a strong understanding of community health and
+                                social care and an awareness of existing services and gaps will allow us to
+                                excel in the Health and social care industry.</em></p>
+                            <p><em>As retirement populations continue to grow, life expectancy increases and publically
+                                provided health and social care services contract, private healthcare services will
+                                continue to expand quickly.</em></p>
+
+                       </div>
+                    </div>
+                </div>
+
+    <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-8 mt-4">
+                     <form action="." method="post">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                  <!-- Name input -->
+{#               <div class="row g-3">#}
+{#                  <div class="col">#}
+{#                    <input type="text" class="form-control rounded-pill border-warning" placeholder="Your Name" aria-label="Your Name">#}
+{#                  </div>#}
+{#                  <div class="col">#}
+{#                    <input type="text" class="form-control rounded-pill border-warning" placeholder="Your Email" aria-label="Your Email">#}
+{#                  </div>#}
+{#                </div>#}
+{##}
+{#                  <!-- Email input -->#}
+{#                        <div class="row g-3 mt-1">#}
+{#                      <div class="col">#}
+{#                     <input type="text" class="form-control rounded-pill border-warning" placeholder="Your Phone" aria-label="Your Phone">#}
+{#                      </div>#}
+{#                      <div class="col">#}
+{#                        <input type="text" class="form-control rounded-pill border-warning" placeholder="Subject" aria-label="Subject">#}
+{#                      </div>#}
+{#                    </div>#}
+{#                  <!-- Message input -->#}
+{#                  <div class="form-outline mb-4 mt-3">#}
+{#                    <textarea class="form-control border-warning" id="form4Example3" placeholder="Messege" rows="4"></textarea>#}
+{#                  </div>#}
+{##}
+{#                  <!-- Checkbox -->#}
+{#                  <div class="form-check d-flex mb-4">#}
+{#                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />#}
+{#                    <label class="form-check-label" for="form4Example4">#}
+{#                      I agree that my submitted data is being collected and stored.#}
+{#                    </label>#}
+{#                  </div>#}
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn btn-outline-dark btn-med border-warning rounded-pill">
+                            Submit
+                        </button>
+                </form>
+            </div>
+        </div>
+
+
 
 
 

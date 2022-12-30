@@ -1,0 +1,46 @@
+.card{
+    background-color:cornflowerblue;
+    border: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-style:inherit;
+
+    background-image: linear-gradient(rgba(46, 136, 214, 0.705), rgb(100, 187, 214),
+  rgba(74, 75, 155, 0.534), rgba(33, 111, 175, 0.5)) ;
+   cursor: pointer;
+}
+
+.card-body {
+    color: aliceblue;
+}
+
+.jumbotron {
+    
+    background-size: cover;
+    background-image: linear-gradient(rgba(19, 133, 226, 0.705), rgb(37, 228, 180),
+     rgb(48, 180, 92), rgba(32, 190, 253, 0.603));
+    background-repeat: no-repeat;
+    
+    height: 500px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+} 
+
+.jumbotron-back {
+    background-image: url(../card3.jpg);
+    background-size: cover;
+    height: 500%;}
+
+.thumbnail {
+    position: relative;
+}
+
+
+.caption {
+    margin: 0;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+        margin-right: -50%;
+      transform: translate(-50%, -50%);
+}

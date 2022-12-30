@@ -1,19 +1,24 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
         <div class="container">
-            <div class="card bg-dark text-blue">
-                <img src="../card3.jpg" class="card-img img-fluid h-50 w-100" alt="...">
-                <div class="card-img-overlay" style="margin-top:35% ;" >
-                  <h2 class="card-title bg-light">Mission</h2>
-                  <p class="card-text bg-light"></p>
+                    <div class="row" >
+                        <div class="thumbnail text-center">
+                            <img src="{% static 'images/old7.jpg' %}" class="img-fluid " alt="...">
+                            <div class="caption">
+                                <h1 class="align-middle ms-3 me-3">
+                                   Mission
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div><hr>
-          </div>
 
 
 
-            <div class="container bg-light">
+            <div class="container bg-light mt-3">
             <div class="row justify-content-center">
                 <h1 class="text-center display-5" style="color: #426f8f;">MISSION</h1>
                 <div class="col-8">
@@ -26,10 +31,11 @@
                 </p><br>
 
                 </div>
-                <div class="col-6">
-                    <h3>Welcome </h3>
-                    <p>
-                        Abi-Support Limited is based in Oxfordshire,
+                <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-4">
+                    <h3 style="color: #264b5d">Welcome </h3>
+                    <p style="font-family:'Bell MT'">
+                        Steck Care Limited is based in Oxfordshire,
                         we provide a Bespoke of High Quality and Personal centred care
                         services to the Young Adults, Elderly and Vulnerable people in Oxfordshire.
                         We aim to help improve quality of life and promote health and wellbeing.
@@ -38,7 +44,7 @@
 
                     </p>
 
-                    <p>
+                    <p style="font-family:'Bell MT'">
                         The company was founded in 2019 by Michael,
                         Margaret Abioke as we have an in-depth knowledge of the social care system due
                         to working with Elderly care,
@@ -46,127 +52,88 @@
                         Michael has worked in the armed forces and has a lot of experience in business management.
                     </p>
                 </div>
-                <div class="col-6">
-                    <h3>Values</h3>
-                    <p>
+                <div class="col-md-4 col-sm-4">
+                    <h3 style="color: #264b5d">Values</h3>
+                    <p style="font-family:'Bell MT'">
                         Respect and professionalism:
                         Treat all people supported by us and all people who work here with respect as all times.
                         Respect individual requirement for privacy and all time and treat all information
                         relating to the person in a confidential manner.
                     </p>
                 </div>
+                </div>
+
 
             </div>
         </div>
 
 
-            <div class="container mt-5">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="container" >
+          <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
+            <div class="col">
+              <div class="card h-100" >
+                    <i class="fa fa-wheelchair mt-3 fa-4x" style="color: rgba(39,70,141,0.72)"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personal Care</h5><hr>
+                  <p class="card-text">Patients who need an extra level of care.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i class="fa fa-medkit mt-3 fa-4x" style="color: rgba(39,70,141,0.72)"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Emergency Support</h5><hr>
+                  <p class="card-text">Our agency offers a broad range of services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i class="fa fa-child mt-3 fa-4x" style="color: rgba(39,70,141,0.72)"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Dementia Care</h5><hr>
+                  <p class="card-text">Our specialists have additional training and skills.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i class="fa fa-user-md mt-3 fa-4x" style="color: rgba(39,70,141,0.72)"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Medication</h5><hr>
+                  <p class="card-text">We provide services tailored to meet your needs.</p>
+                </div>
+              </div>
+            </div>
 
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-                            Personal Care and Assistance</h5>
-                            <p style="color: grey;"><small>Bathing, restroom activities, incontinence care, grooming, personal hygiene, dressing, walking, etc.</small></p>
-                        </div>
-
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-                            Living in Care and Overnight Care</h5>
-                            <p style="color: grey;"><small>Helping you live the life you want on your own terms etc.</small></p>
-                        </div>
-
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-
-                            Professional Medication Management</h5>
-                            <p style="color: grey;"><small>Reminders, supervision, pill box, organization, daily log, etc.</small></p>
-                        </div>
-
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-
-                            Mobility aids and Home adaptation</h5>
-                            <p style="color: grey;"><small>Schedule planning and assistance (visits, appointments, errands, outings, etc.)</small></p>
-                        </div>
-
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-                            Domiciliary Care for Elderly Care</h5>
-                            <p style="color: grey;"><small>We are here to help with everyday tasks you might struggle with (complete individual care plans, etc.)</small></p>
-                        </div>
-
-
-                        <div class="col-sm-2">
-                            <img src="../card1.jpg" class="img-fluid rounded-circle h-50 w-50 ms-5" alt="...">
-                        </div>
-                        <div class="col-md-2">
-                            <h5 class="display-6"
-                            style="font-size:medium;
-                            font-style:inherit;
-                            color: rgb(3, 107, 107);
-                            font-weight: 400;">
-
-                            Support in the Community</h5>
-                            <p style="color: grey;"><small>Support to help you stay connected to people you love (We can set you up with Skype, and make sharing pictures easy)</small></p>
-                        </div>
+            <div class="col">
+                <div class="card h-100">
+                  <i class="fa fa-plus-square mt-3 fa-4x" style="color: rgba(39,70,141,0.72)" ></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Support During holiday</h5><hr>
+                    <p class="card-text">Ready to support at anytime through out your holiday.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <hr></div>
 
 
 
-                    </div><hr>
-                    </div>
-
-
-                        <div class="container">
-                        <div class="card bg-dark text-blue">
-                            <img src="../card3.jpg" class="card-img img-fluid" alt="...">
-                            <div class="card-img-overlay" style="margin-top:35% ;" >
-                              <h2 class="card-title bg-light">Having a hand to hold allows me to stay in my home</h2>
-                              <p class="card-text bg-light">Allow your loved one to maintain their happiness!</p>
-                              <button type="submit" class="btn btn btn-outline-light btn-med border-warning rounded-pill ms-5 me-5">
-                                    Learn More
-                                </button>
+                         <div class="container">
+                    <div class="row" >
+                        <div class="thumbnail text-center">
+                            <img src="{% static 'images/old11.jpg' %}" class="img-fluid " alt="...">
+                            <div class="caption ms-3 me-3" style="color: white">
+                                <h1 class="align-middle ">
+                                   Having a hand to hold allows me to stay in my home
+                                </h1>
+                                <p>Allow your loved one to maintain their happiness!</p>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                </div>
 
 {% endblock content %}
